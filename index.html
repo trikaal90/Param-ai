@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Video Generator</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>AI Video & Cartoon Generator</h1>
+        <form id="videoForm">
+            <label for="text">Enter Text:</label>
+            <textarea id="text" rows="4" placeholder="Enter your script for the video..."></textarea>
+
+            <label for="voice">Choose Voice Style:</label>
+            <select id="voice">
+                <option value="male">Male Voice</option>
+                <option value="female">Female Voice</option>
+                <option value="robotic">Robotic Voice</option>
+            </select>
+
+            <label for="style">Choose Video Style:</label>
+            <select id="style">
+                <option value="realistic">Realistic</option>
+                <option value="cartoon">Cartoon</option>
+                <option value="anime">Anime</option>
+            </select>
+
+            <button type="button" id="generateVideoBtn">Generate Video</button>
+        </form>
+
+        <div id="output">
+            <h2>Generated Video:</h2>
+            <video id="videoPlayer" controls></video>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
